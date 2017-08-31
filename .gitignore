@@ -1,0 +1,4 @@
+*.pyc
+src/migrations/
+src/.env
+.idea/
