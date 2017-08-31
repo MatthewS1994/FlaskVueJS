@@ -14,7 +14,7 @@ from celery_conf import make_celery
 
 
 app = Flask('RESTLESS API SERVER')
-app.secret_key = os.environ.get('SECRET_KEY', 'colonyuserfiles3cr3t')
+app.secret_key = os.environ.get('SECRET_KEY', '')
 app.config.from_object(os.environ.get('APP_SETTINGS', 'config.DevelopmentConfig'))
 
 cache = Cache(app)
